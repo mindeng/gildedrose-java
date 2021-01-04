@@ -36,7 +36,7 @@ public class TextTestFixture {
                 printStream.println(item);
             }
             printStream.println();
-            app.updateQuality();
+            GildedRose.updateQuality(app.items);
         }
 
         return outputStream.toString();
