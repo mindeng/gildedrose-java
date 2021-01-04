@@ -14,7 +14,7 @@ public class Item {
         this.quality = quality;
     }
 
-    void extracted() {
+    void updateQuality() {
         if (!this.name.equals("Aged Brie")
                 && !this.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
             if (this.quality > 0) {

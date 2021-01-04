@@ -9,7 +9,7 @@ class GildedRose {
 
     public static void updateQuality(Item[] items) {
         for (Item item : items) {
-            item.extracted();
+            item.updateQuality();
         }
     }
 
