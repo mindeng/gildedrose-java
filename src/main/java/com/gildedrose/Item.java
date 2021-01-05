@@ -26,9 +26,7 @@ public class Item {
 
     protected void updateAfterExpired() {
         if (this.quality > 0) {
-            if (!isSulfuras()) {
-                this.quality = this.quality - 1;
-            }
+            this.quality = this.quality - 1;
         }
     }
 
