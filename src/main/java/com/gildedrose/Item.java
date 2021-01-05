@@ -19,9 +19,13 @@ public class Item {
 
         updateSellIn();
 
-        if (this.sellIn < 0) {
+        if (isExpired()) {
             updateAfterExpired();
         }
+    }
+
+    private boolean isExpired() {
+        return this.sellIn < 0;
     }
 
     protected void updateAfterExpired() {
