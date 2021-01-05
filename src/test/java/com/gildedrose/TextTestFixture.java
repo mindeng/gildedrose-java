@@ -1,5 +1,9 @@
 package com.gildedrose;
 
+import com.gildedrose.items.AgedBrie;
+import com.gildedrose.items.Backstage;
+import com.gildedrose.items.Sulfuras;
+
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 

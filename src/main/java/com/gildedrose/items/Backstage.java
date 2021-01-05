@@ -1,4 +1,6 @@
-package com.gildedrose;
+package com.gildedrose.items;
+
+import com.gildedrose.Item;
 
 public class Backstage extends Item {
     public Backstage(int sellIn, int quality) {
