@@ -20,10 +20,10 @@ public class TextTestFixture {
                 new Item("Elixir of the Mongoose", 5, 7), //
                 Item.createSulfuras(0, 80), //
                 Item.createSulfuras(-1, 80),
-                createBackstage(15, 20),
-                createBackstage(10, 49),
-                createBackstage(5, 49),
-                createBackstage(1, 20),
+                Item.createBackstage(15, 20),
+                Item.createBackstage(10, 49),
+                Item.createBackstage(5, 49),
+                Item.createBackstage(1, 20),
                 // this conjured item does not work properly yet
                 new Item("Conjured Mana Cake", 3, 6)};
 
@@ -40,10 +40,6 @@ public class TextTestFixture {
         }
 
         return outputStream.toString();
-    }
-
-    private static Item createBackstage(int sellIn, int quality) {
-        return new Item("Backstage passes to a TAFKAL80ETC concert", sellIn, quality);
     }
 
 }
