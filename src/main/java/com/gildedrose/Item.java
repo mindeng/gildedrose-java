@@ -17,9 +17,7 @@ public class Item {
     void passOneDay() {
         updateQuality();
 
-        if (!isSulfuras()) {
-            this.sellIn = this.sellIn - 1;
-        }
+        updateSellIn();
 
         if (this.sellIn < 0) {
             if (!isAgedBrie()) {
@@ -35,6 +33,12 @@ public class Item {
                     this.quality = this.quality + 1;
                 }
             }
+        }
+    }
+
+    private void updateSellIn() {
+        if (!isSulfuras()) {
+            this.sellIn = this.sellIn - 1;
         }
     }
 
