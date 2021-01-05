@@ -40,10 +40,8 @@ public class Item {
         }
     }
 
-    private void updateSellIn() {
-        if (!isSulfuras()) {
-            this.sellIn = this.sellIn - 1;
-        }
+    protected void updateSellIn() {
+        this.sellIn = this.sellIn - 1;
     }
 
     protected void updateQuality() {
