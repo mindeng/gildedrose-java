@@ -28,4 +28,9 @@ public class Backstage extends Item {
             }
         }
     }
+
+    @Override
+    protected void updateAfterExpired() {
+        this.quality = 0;
+    }
 }

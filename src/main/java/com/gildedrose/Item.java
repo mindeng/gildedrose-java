@@ -25,13 +25,11 @@ public class Item {
     }
 
     protected void updateAfterExpired() {
-        if (!isBackstage()) {
-            if (this.quality > 0) {
-                if (!isSulfuras()) {
-                    this.quality = this.quality - 1;
-                }
+        if (this.quality > 0) {
+            if (!isSulfuras()) {
+                this.quality = this.quality - 1;
             }
-        } else this.quality = 0;
+        }
     }
 
     protected void updateSellIn() {
