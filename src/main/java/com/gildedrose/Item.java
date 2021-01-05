@@ -25,19 +25,13 @@ public class Item {
     }
 
     protected void updateAfterExpired() {
-        if (!isAgedBrie()) {
-            if (!isBackstage()) {
-                if (this.quality > 0) {
-                    if (!isSulfuras()) {
-                        this.quality = this.quality - 1;
-                    }
+        if (!isBackstage()) {
+            if (this.quality > 0) {
+                if (!isSulfuras()) {
+                    this.quality = this.quality - 1;
                 }
-            } else this.quality = 0;
-        } else {
-            if (this.quality < 50) {
-                this.quality = this.quality + 1;
             }
-        }
+        } else this.quality = 0;
     }
 
     protected void updateSellIn() {
