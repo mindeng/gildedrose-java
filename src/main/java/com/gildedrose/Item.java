@@ -46,7 +46,7 @@ public class Item {
         }
     }
 
-    private void updateQuality() {
+    protected void updateQuality() {
         if (!isAgedBrie()
                 && !isBackstage()) {
             if (this.quality > 0) {
@@ -57,20 +57,6 @@ public class Item {
         } else {
             if (this.quality < 50) {
                 this.quality = this.quality + 1;
-
-                if (isBackstage()) {
-                    if (this.sellIn < 11) {
-                        if (this.quality < 50) {
-                            this.quality = this.quality + 1;
-                        }
-                    }
-
-                    if (this.sellIn < 6) {
-                        if (this.quality < 50) {
-                            this.quality = this.quality + 1;
-                        }
-                    }
-                }
             }
         }
     }
