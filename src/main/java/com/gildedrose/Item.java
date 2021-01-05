@@ -24,7 +24,7 @@ public class Item {
         }
     }
 
-    private void updateAfterExpired() {
+    protected void updateAfterExpired() {
         if (!isAgedBrie()) {
             if (!isBackstage()) {
                 if (this.quality > 0) {
