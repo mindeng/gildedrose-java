@@ -25,7 +25,7 @@ public class Backstage extends Item {
     }
 
     @Override
-    protected void updateAfterExpired() {
+    protected void updateQualityAfterExpired() {
         this.quality = 0;
     }
 }

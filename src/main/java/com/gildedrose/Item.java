@@ -20,7 +20,7 @@ public class Item {
         updateSellIn();
 
         if (isExpired()) {
-            updateAfterExpired();
+            updateQualityAfterExpired();
         }
     }
 
@@ -28,7 +28,7 @@ public class Item {
         return this.sellIn < 0;
     }
 
-    protected void updateAfterExpired() {
+    protected void updateQualityAfterExpired() {
         if (this.quality > 0) {
             this.quality = this.quality - 1;
         }
