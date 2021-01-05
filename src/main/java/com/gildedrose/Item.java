@@ -40,18 +40,6 @@ public class Item {
         }
     }
 
-    protected boolean isSulfuras() {
-        return false;
-    }
-
-    protected boolean isBackstage() {
-        return false;
-    }
-
-    protected boolean isAgedBrie() {
-        return false;
-    }
-
     @Override
     public String toString() {
         return this.name + ", " + this.sellIn + ", " + this.quality;

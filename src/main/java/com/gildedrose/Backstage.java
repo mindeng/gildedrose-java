@@ -6,11 +6,6 @@ public class Backstage extends Item {
     }
 
     @Override
-    protected boolean isBackstage() {
-        return true;
-    }
-
-    @Override
     protected void updateQuality() {
         if (this.quality < 50) {
             this.quality = this.quality + 1;
