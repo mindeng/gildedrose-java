@@ -9,4 +9,11 @@ public class AgedBrie extends Item {
     protected boolean isAgedBrie() {
         return true;
     }
+
+    @Override
+    protected void updateQuality() {
+        if (this.quality < 50) {
+            this.quality = this.quality + 1;
+        }
+    }
 }

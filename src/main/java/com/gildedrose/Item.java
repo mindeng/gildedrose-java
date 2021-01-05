@@ -54,10 +54,6 @@ public class Item {
                     this.quality = this.quality - 1;
                 }
             }
-        } else {
-            if (this.quality < 50) {
-                this.quality = this.quality + 1;
-            }
         }
     }
 
